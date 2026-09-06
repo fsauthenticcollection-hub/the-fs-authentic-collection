@@ -1,66 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The FS Authentic Collection | Online Shop</title>
-<meta name="description" content="The FS Authentic Collection — premium fashion, timeless elegance and authentic style.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The FS Authentic Collection — premium fashion and timeless style.">
+<title>The FS Authentic Collection | Premium Fashion</title>
 <style>
-*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#171717;background:#faf9f7}
-a{text-decoration:none;color:inherit}.nav{display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:#fff;position:sticky;top:0;z-index:5;border-bottom:1px solid #eee}
-.brand{display:flex;align-items:center;gap:12px;font-weight:700}.brand img{width:48px;height:48px;border-radius:50%;object-fit:cover}.links{display:flex;gap:24px;font-size:14px}
-.hero{padding:85px 7%;background:linear-gradient(135deg,#f5f0eb,#fff);text-align:center}.hero h1{font-family:Georgia,serif;font-size:clamp(42px,7vw,76px);margin:10px 0}.hero p{max-width:680px;margin:20px auto 30px;color:#5f5f5f;font-size:18px;line-height:1.6}
-.btn{display:inline-block;padding:14px 24px;border-radius:28px;background:#171717;color:#fff;font-weight:700}.section{padding:70px 7%}.section h2{text-align:center;font-family:Georgia,serif;font-size:38px;margin:0 0 12px}.sub{text-align:center;color:#777;margin-bottom:35px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:22px}.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 4px 18px #00000010}.card img{width:100%;height:330px;object-fit:cover;display:block}.card .pad{padding:18px}.card h3{margin:0 0 8px;font-size:18px}.card p{margin:0;color:#777;line-height:1.5}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.about img{width:100%;max-width:430px;border-radius:22px;margin:auto;display:block}.about p{color:#666;line-height:1.8}
-.contact{background:#171717;color:#fff;text-align:center}.contact p{color:#ccc;line-height:1.7}.contact .btn{background:#fff;color:#171717;margin-top:10px}
-footer{text-align:center;padding:24px;color:#777;font-size:13px;background:#fff}
-@media(max-width:700px){.links{display:none}.about{grid-template-columns:1fr}.section{padding:55px 5%}.hero{padding:65px 5%}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#151515;background:#f8f6f2;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.nav{position:sticky;top:0;z-index:20;background:rgba(248,246,242,.95);backdrop-filter:blur(12px);border-bottom:1px solid #ddd8d0}
+.navin{max-width:1180px;margin:auto;padding:17px 22px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:Georgia,serif;font-weight:700;font-size:22px;letter-spacing:.5px}
+.links{display:flex;gap:28px;font-size:14px}
+.links a:hover{text-decoration:underline}
+.hero{max-width:1180px;margin:auto;padding:85px 22px 70px;display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center}
+.kicker{font-size:12px;letter-spacing:4px;color:#777;text-transform:uppercase;margin-bottom:20px}
+h1{font-family:Georgia,serif;font-size:clamp(52px,7vw,92px);line-height:.94;letter-spacing:-3px;margin-bottom:25px}
+.hero p{max-width:570px;color:#666;font-size:18px}
+.btn{display:inline-block;margin-top:30px;background:#151515;color:#fff;padding:15px 27px;border-radius:40px;font-weight:700}
+.btn:hover{opacity:.85}
+.heroimg{height:560px;border-radius:5px;background:linear-gradient(135deg,#ddd2c4,#f4f1eb);overflow:hidden}
+.heroimg img{width:100%;height:100%;object-fit:cover}
+.section{max-width:1180px;margin:auto;padding:70px 22px}
+.title{text-align:center;font-family:Georgia,serif;font-size:42px;margin-bottom:10px}
+.sub{text-align:center;color:#777;margin-bottom:38px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid #e4e0da;overflow:hidden}
+.card img{width:100%;height:390px;object-fit:cover;display:block}
+.cardbody{padding:20px}
+.card h3{font-family:Georgia,serif;font-size:22px}
+.card p{color:#777;font-size:14px;margin-top:6px}
+.about{background:#151515;color:#fff}
+.aboutin{max-width:900px;margin:auto;text-align:center;padding:80px 22px}
+.about h2{font-family:Georgia,serif;font-size:44px;margin-bottom:16px}
+.about p{color:#d0ccc6;font-size:17px}
+.contact{background:#eeeae4}
+.contactin{text-align:center;max-width:700px;margin:auto}
+.contact h2{font-family:Georgia,serif;font-size:42px}
+.contact p{color:#666;margin:10px 0 25px}
+.footer{background:#151515;color:#aaa;text-align:center;padding:28px 20px;font-size:13px}
+@media(max-width:800px){
+ .links{display:none}
+ .hero{grid-template-columns:1fr;padding-top:55px}
+ .heroimg{height:420px;order:-1}
+ h1{font-size:58px;letter-spacing:-2px}
+ .grid{grid-template-columns:1fr}
+ .card img{height:430px}
+}
 </style>
 </head>
 <body>
-<header class="nav">
-  <a class="brand" href="#home"><img src="assets/logo.jpg" alt="The FS Authentic Collection logo"><span>The FS Authentic Collection</span></a>
-  <nav class="links"><a href="#home">Home</a><a href="#collection">Collection</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+<nav class="nav">
+ <div class="navin">
+  <div class="logo">The FS Authentic Collection</div>
+  <div class="links"><a href="#collection">Collection</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+ </div>
+</nav>
+
+<header class="hero">
+ <div>
+  <div class="kicker">Premium Fashion • Authentic Style</div>
+  <h1>The FS<br>Authentic<br>Collection</h1>
+  <p>Curating premium elegance, timeless looks and confident style for every occasion. Discover a refined fashion collection designed to make every look feel authentic.</p>
+  <a class="btn" href="#collection">Explore Collection</a>
+ </div>
+ <div class="heroimg">
+  <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1000&q=85" alt="Elegant fashion collection">
+ </div>
 </header>
 
-<main>
-<section id="home" class="hero">
-  <p style="letter-spacing:3px;text-transform:uppercase;font-size:12px;color:#777">Premium Fashion • Authentic Style</p>
-  <h1>The FS Authentic Collection</h1>
-  <p>Curating premium elegance, timeless looks and confident style for every occasion. Discover our latest fashion collection.</p>
-  <a class="btn" href="#collection">Explore Collection</a>
+<section class="section" id="collection">
+ <h2 class="title">Featured Collection</h2>
+ <p class="sub">Elegant pieces. Confident silhouettes. Timeless appeal.</p>
+ <div class="grid">
+  <article class="card"><img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=85" alt="Women's elegant fashion"><div class="cardbody"><h3>Elegant Essentials</h3><p>Polished styles for effortless everyday elegance.</p></div></article>
+  <article class="card"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=85" alt="Premium women's fashion"><div class="cardbody"><h3>Signature Looks</h3><p>Statement pieces created for confident occasions.</p></div></article>
+  <article class="card"><img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=800&q=85" alt="Modern fashion style"><div class="cardbody"><h3>Timeless Style</h3><p>Modern silhouettes with a refined, classic feel.</p></div></article>
+ </div>
 </section>
 
-<section id="collection" class="section">
-  <h2>Featured Collection</h2>
-  <p class="sub">A selection of elegant looks from The FS Authentic Collection.</p>
-  <div class="grid">
-    <article class="card"><img src="assets/dress-red.jpg" alt="Red elegant dress"><div class="pad"><h3>Elegant Red Dress</h3><p>Graceful, feminine and perfect for a statement look.</p></div></article>
-    <article class="card"><img src="assets/jumpsuit-black.jpg" alt="Black wide-leg jumpsuit"><div class="pad"><h3>Classic Black Jumpsuit</h3><p>Modern tailoring with a timeless, sophisticated finish.</p></div></article>
-    <article class="card"><img src="assets/dress-beige.jpg" alt="Beige patterned dress"><div class="pad"><h3>Signature Pattern Dress</h3><p>Polished style designed to stand out effortlessly.</p></div></article>
-    <article class="card"><img src="assets/dress-black.jpg" alt="Black evening dress"><div class="pad"><h3>Timeless Black Dress</h3><p>Minimal, elegant and made for confident occasions.</p></div></article>
-  </div>
+<section class="about" id="about">
+ <div class="aboutin">
+  <h2>Authentic by design.</h2>
+  <p>The FS Authentic Collection brings together premium fashion inspiration and timeless styling with a clean, sophisticated aesthetic. Our focus is simple: beautiful looks, confident choices and authentic personal style.</p>
+ </div>
 </section>
 
-<section id="about" class="section">
-  <div class="about">
-    <img src="assets/logo.jpg" alt="The FS Authentic Collection">
-    <div>
-      <h2 style="text-align:left">Our Story</h2>
-      <p>The FS Authentic Collection is a fashion-focused brand built around premium elegance and authentic personal style. Our goal is to make beautiful, confident fashion easy to discover.</p>
-      <p>Follow our latest looks and collection updates on Pinterest and social media.</p>
-    </div>
-  </div>
+<section class="section contact" id="contact">
+ <div class="contactin">
+  <h2>Let’s connect</h2>
+  <p>For collection enquiries, collaborations or shopping information, get in touch with The FS Authentic Collection.</p>
+  <a class="btn" href="mailto:fsauthenticcollection@gmail.com">Contact Us</a>
+ </div>
 </section>
 
-<section id="contact" class="section contact">
-  <h2>Stay Connected</h2>
-  <p>For collection updates, new arrivals and style inspiration, visit our Pinterest profile.</p>
-  <a class="btn" href="https://www.pinterest.com/THE_FS_AUTHENTIC_COLLECTION/" target="_blank" rel="noopener">Visit Pinterest</a>
-</section>
-</main>
-
-<footer>© 2026 The FS Authentic Collection. All rights reserved.</footer>
+<footer class="footer">© 2026 The FS Authentic Collection • Premium Fashion & Online Shop</footer>
 </body>
 </html>
