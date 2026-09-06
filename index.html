@@ -4,98 +4,261 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="The FS Authentic Collection — premium fashion and timeless style.">
-<title>The FS Authentic Collection | Premium Fashion</title>
+<title>The FS Authentic Collection</title>
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;color:#151515;background:#f8f6f2;line-height:1.6}
-a{text-decoration:none;color:inherit}
-.nav{position:sticky;top:0;z-index:20;background:rgba(248,246,242,.95);backdrop-filter:blur(12px);border-bottom:1px solid #ddd8d0}
-.navin{max-width:1180px;margin:auto;padding:17px 22px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-family:Georgia,serif;font-weight:700;font-size:22px;letter-spacing:.5px}
-.links{display:flex;gap:28px;font-size:14px}
-.links a:hover{text-decoration:underline}
-.hero{max-width:1180px;margin:auto;padding:85px 22px 70px;display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center}
-.kicker{font-size:12px;letter-spacing:4px;color:#777;text-transform:uppercase;margin-bottom:20px}
-h1{font-family:Georgia,serif;font-size:clamp(52px,7vw,92px);line-height:.94;letter-spacing:-3px;margin-bottom:25px}
-.hero p{max-width:570px;color:#666;font-size:18px}
-.btn{display:inline-block;margin-top:30px;background:#151515;color:#fff;padding:15px 27px;border-radius:40px;font-weight:700}
-.btn:hover{opacity:.85}
-.heroimg{height:560px;border-radius:5px;background:linear-gradient(135deg,#ddd2c4,#f4f1eb);overflow:hidden}
-.heroimg img{width:100%;height:100%;object-fit:cover}
-.section{max-width:1180px;margin:auto;padding:70px 22px}
-.title{text-align:center;font-family:Georgia,serif;font-size:42px;margin-bottom:10px}
-.sub{text-align:center;color:#777;margin-bottom:38px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{background:#fff;border:1px solid #e4e0da;overflow:hidden}
-.card img{width:100%;height:390px;object-fit:cover;display:block}
-.cardbody{padding:20px}
-.card h3{font-family:Georgia,serif;font-size:22px}
-.card p{color:#777;font-size:14px;margin-top:6px}
-.about{background:#151515;color:#fff}
-.aboutin{max-width:900px;margin:auto;text-align:center;padding:80px 22px}
-.about h2{font-family:Georgia,serif;font-size:44px;margin-bottom:16px}
-.about p{color:#d0ccc6;font-size:17px}
-.contact{background:#eeeae4}
-.contactin{text-align:center;max-width:700px;margin:auto}
-.contact h2{font-family:Georgia,serif;font-size:42px}
-.contact p{color:#666;margin:10px 0 25px}
-.footer{background:#151515;color:#aaa;text-align:center;padding:28px 20px;font-size:13px}
-@media(max-width:800px){
- .links{display:none}
- .hero{grid-template-columns:1fr;padding-top:55px}
- .heroimg{height:420px;order:-1}
- h1{font-size:58px;letter-spacing:-2px}
- .grid{grid-template-columns:1fr}
- .card img{height:430px}
-}
+  :root{
+    --ink:#151515;
+    --muted:#6d6d6d;
+    --paper:#f7f4ef;
+    --white:#fff;
+    --line:#dedad3;
+    --accent:#c7a27a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:Arial,Helvetica,sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.6;
+  }
+  img{width:100%;display:block;object-fit:cover}
+  a{text-decoration:none;color:inherit}
+  .nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(247,244,239,.94);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:1180px;margin:auto;padding:18px 28px;
+    display:flex;align-items:center;justify-content:space-between;gap:20px;
+  }
+  .brand{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:24px;font-weight:700;letter-spacing:-.5px;
+  }
+  .links{display:flex;gap:28px;font-size:14px;font-weight:600}
+  .links a:hover{opacity:.55}
+  .menu{display:none;border:0;background:none;font-size:26px}
+  .hero{
+    max-width:1180px;margin:auto;padding:46px 28px 80px;
+    display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center;
+  }
+  .eyebrow{
+    color:#777;text-transform:uppercase;letter-spacing:5px;font-size:12px;
+    margin-bottom:18px;
+  }
+  h1,h2,h3{
+    font-family:Georgia,"Times New Roman",serif;
+    line-height:1.02;
+  }
+  h1{font-size:clamp(52px,7vw,92px);letter-spacing:-4px;margin-bottom:26px}
+  .hero p{font-size:19px;color:var(--muted);max-width:570px;margin-bottom:32px}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;
+    background:var(--ink);color:#fff;border-radius:40px;
+    padding:16px 28px;font-weight:700;border:1px solid var(--ink);
+    transition:.2s transform,.2s background;
+  }
+  .btn:hover{transform:translateY(-2px);background:#333}
+  .btn.light{background:transparent;color:var(--ink)}
+  .hero-img{height:680px;border-radius:3px}
+  .section{padding:90px 28px}
+  .section-inner{max-width:1180px;margin:auto}
+  .center{text-align:center}
+  .section h2{font-size:clamp(46px,6vw,72px);letter-spacing:-2px;margin-bottom:15px}
+  .lead{color:var(--muted);font-size:18px;max-width:650px;margin:0 auto 48px}
+  .products{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:22px;
+  }
+  .card{background:var(--white);border:1px solid var(--line);overflow:hidden}
+  .card-img{height:440px}
+  .card-body{padding:22px}
+  .card h3{font-size:29px;margin-bottom:5px}
+  .card p{color:var(--muted);font-size:15px;margin-bottom:16px}
+  .price{font-weight:700;font-size:18px}
+  .look-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .look{background:var(--white);border:1px solid var(--line)}
+  .look img{height:570px}
+  .look-body{padding:28px}
+  .look h3{font-size:34px;margin-bottom:8px}
+  .look p{color:var(--muted)}
+  .dark{background:#151515;color:#fff}
+  .dark .muted{color:#d2d0cc}
+  .story{
+    max-width:900px;margin:auto;text-align:center;padding:20px 0;
+  }
+  .story h2{font-size:clamp(50px,7vw,82px);margin-bottom:25px}
+  .story p{font-size:20px;color:#d2d0cc}
+  .contact{
+    text-align:center;max-width:760px;margin:auto;
+  }
+  .contact h2{font-size:clamp(48px,6vw,72px);margin-bottom:20px}
+  .contact p{color:var(--muted);font-size:19px;margin-bottom:30px}
+  .contact-box{
+    background:#fff;border:1px solid var(--line);padding:28px;text-align:left;
+    max-width:620px;margin:30px auto 0;
+  }
+  input,textarea{
+    width:100%;padding:15px;margin:7px 0 15px;
+    border:1px solid #cfcac2;background:#faf9f6;font:inherit;
+  }
+  textarea{min-height:120px;resize:vertical}
+  footer{background:#151515;color:#bbb;text-align:center;padding:30px 20px;font-size:14px}
+  .mini-note{font-size:12px;color:#888;margin-top:12px}
+  @media(max-width:800px){
+    .links{display:none}
+    .menu{display:block}
+    .nav-inner{padding:16px 20px}
+    .hero{grid-template-columns:1fr;padding:35px 20px 55px;gap:30px}
+    h1{font-size:58px;letter-spacing:-3px}
+    .hero p{font-size:17px}
+    .hero-img{height:520px}
+    .section{padding:65px 20px}
+    .products,.look-grid{grid-template-columns:1fr}
+    .card-img{height:430px}
+    .look img{height:500px}
+  }
 </style>
 </head>
 <body>
+
 <nav class="nav">
- <div class="navin">
-  <div class="logo">The FS Authentic Collection</div>
-  <div class="links"><a href="#collection">Collection</a><a href="#about">About</a><a href="#contact">Contact</a></div>
- </div>
+  <div class="nav-inner">
+    <a class="brand" href="#top">The FS Authentic Collection</a>
+    <div class="links">
+      <a href="#collection">Collection</a>
+      <a href="#looks">Looks</a>
+      <a href="#story">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="menu" aria-label="Menu" onclick="toggleMenu()">☰</button>
+  </div>
+  <div id="mobileMenu" style="display:none;padding:0 20px 18px;text-align:center">
+    <a href="#collection" onclick="closeMenu()">Collection</a> ·
+    <a href="#looks" onclick="closeMenu()">Looks</a> ·
+    <a href="#story" onclick="closeMenu()">About</a> ·
+    <a href="#contact" onclick="closeMenu()">Contact</a>
+  </div>
 </nav>
 
-<header class="hero">
- <div>
-  <div class="kicker">Premium Fashion • Authentic Style</div>
-  <h1>The FS<br>Authentic<br>Collection</h1>
-  <p>Curating premium elegance, timeless looks and confident style for every occasion. Discover a refined fashion collection designed to make every look feel authentic.</p>
-  <a class="btn" href="#collection">Explore Collection</a>
- </div>
- <div class="heroimg">
-  <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1000&q=85" alt="Elegant fashion collection">
- </div>
-</header>
+<main id="top">
+<section class="hero">
+  <div>
+    <div class="eyebrow">Premium Fashion • Authentic Style</div>
+    <h1>The FS<br>Authentic<br>Collection</h1>
+    <p>Curating premium elegance, timeless looks and confident style for every occasion. Discover a refined fashion collection designed to make every look feel authentic.</p>
+    <a class="btn" href="#collection">Explore Collection</a>
+  </div>
+  <img class="hero-img" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=85" alt="Elegant fashion look">
+</section>
 
 <section class="section" id="collection">
- <h2 class="title">Featured Collection</h2>
- <p class="sub">Elegant pieces. Confident silhouettes. Timeless appeal.</p>
- <div class="grid">
-  <article class="card"><img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=85" alt="Women's elegant fashion"><div class="cardbody"><h3>Elegant Essentials</h3><p>Polished styles for effortless everyday elegance.</p></div></article>
-  <article class="card"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=85" alt="Premium women's fashion"><div class="cardbody"><h3>Signature Looks</h3><p>Statement pieces created for confident occasions.</p></div></article>
-  <article class="card"><img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=800&q=85" alt="Modern fashion style"><div class="cardbody"><h3>Timeless Style</h3><p>Modern silhouettes with a refined, classic feel.</p></div></article>
- </div>
+  <div class="section-inner center">
+    <div class="eyebrow">Curated pieces</div>
+    <h2>Featured Collection</h2>
+    <p class="lead">Elegant pieces. Confident silhouettes. Timeless appeal.</p>
+    <div class="products">
+      <article class="card">
+        <img class="card-img" src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=85" alt="Elegant tailored trousers">
+        <div class="card-body">
+          <h3>Modern Tailoring</h3>
+          <p>Clean lines and effortless confidence.</p>
+          <div class="price">Premium Edit</div>
+        </div>
+      </article>
+      <article class="card">
+        <img class="card-img" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=85" alt="Premium fashion outfit">
+        <div class="card-body">
+          <h3>Signature Edit</h3>
+          <p>Statement pieces made for memorable occasions.</p>
+          <div class="price">Premium Edit</div>
+        </div>
+      </article>
+      <article class="card">
+        <img class="card-img" src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=85" alt="Classic fashion style">
+        <div class="card-body">
+          <h3>Timeless Style</h3>
+          <p>Modern silhouettes with a refined, classic feel.</p>
+          <div class="price">Premium Edit</div>
+        </div>
+      </article>
+    </div>
+  </div>
 </section>
 
-<section class="about" id="about">
- <div class="aboutin">
-  <h2>Authentic by design.</h2>
-  <p>The FS Authentic Collection brings together premium fashion inspiration and timeless styling with a clean, sophisticated aesthetic. Our focus is simple: beautiful looks, confident choices and authentic personal style.</p>
- </div>
+<section class="section" id="looks">
+  <div class="section-inner">
+    <div class="center">
+      <div class="eyebrow">The visual identity</div>
+      <h2>Signature Looks</h2>
+      <p class="lead">Statement styling and polished everyday elegance.</p>
+    </div>
+    <div class="look-grid">
+      <article class="look">
+        <img src="https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=1000&q=85" alt="Statement fashion look">
+        <div class="look-body">
+          <h3>Signature Looks</h3>
+          <p>Statement pieces created for confident occasions.</p>
+        </div>
+      </article>
+      <article class="look">
+        <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1000&q=85" alt="Timeless fashion look">
+        <div class="look-body">
+          <h3>Timeless Style</h3>
+          <p>Refined essentials with a modern, classic feel.</p>
+        </div>
+      </article>
+    </div>
+  </div>
 </section>
 
-<section class="section contact" id="contact">
- <div class="contactin">
-  <h2>Let’s connect</h2>
-  <p>For collection enquiries, collaborations or shopping information, get in touch with The FS Authentic Collection.</p>
-  <a class="btn" href="mailto:fsauthenticcollection@gmail.com">Contact Us</a>
- </div>
+<section class="section dark" id="story">
+  <div class="story">
+    <div class="eyebrow" style="color:#aaa">Our philosophy</div>
+    <h2>Authentic by<br>design.</h2>
+    <p>The FS Authentic Collection brings together premium fashion inspiration and timeless styling with a clean, sophisticated aesthetic. Our focus is simple: beautiful looks, confident choices and authentic personal style.</p>
+  </div>
 </section>
 
-<footer class="footer">© 2026 The FS Authentic Collection • Premium Fashion & Online Shop</footer>
+<section class="section" id="contact">
+  <div class="contact">
+    <div class="eyebrow">Get in touch</div>
+    <h2>Let’s connect</h2>
+    <p>For collection enquiries, collaborations or shopping information, get in touch with The FS Authentic Collection.</p>
+    <a class="btn" href="#message">Contact Us</a>
+
+    <div class="contact-box" id="message">
+      <form onsubmit="sendMessage(event)">
+        <label>Name</label>
+        <input id="name" required placeholder="Your name">
+        <label>Message</label>
+        <textarea id="msg" required placeholder="How can we help?"></textarea>
+        <button class="btn" type="submit">Send Enquiry</button>
+        <div class="mini-note">This form opens your phone's email app. You can change the email address in the HTML later.</div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 The FS Authentic Collection • Premium Fashion & Online Shop</footer>
+
+<script>
+function toggleMenu(){
+  const m=document.getElementById('mobileMenu');
+  m.style.display=m.style.display==='none'?'block':'none';
+}
+function closeMenu(){document.getElementById('mobileMenu').style.display='none'}
+function sendMessage(e){
+  e.preventDefault();
+  const name=document.getElementById('name').value.trim();
+  const msg=document.getElementById('msg').value.trim();
+  const subject=encodeURIComponent('FS Authentic Collection Enquiry');
+  const body=encodeURIComponent('Name: '+name+'\\n\\n'+msg);
+  window.location.href='mailto:?subject='+subject+'&body='+body;
+}
+</script>
 </body>
 </html>
