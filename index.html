@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Shopping Hub</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f7f8fa;
+            color: #333;
+            padding-bottom: 40px;
+        }
+        .header {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            color: white;
+            padding: 24px 16px;
+            text-align: center;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 6px;
+        }
+        .header p {
+            font-size: 13px;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 12px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1a202c;
+            margin: 24px 0 12px 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-bottom: 2px solid #ff4b2b;
+            padding-bottom: 6px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border-left: 4px solid #ff4b2b;
+        }
+        .card h3 {
+            font-size: 16px;
+            color: #2d3748;
+            margin-bottom: 6px;
+        }
+        .card p {
+            font-size: 13px;
+            color: #718096;
+            margin-bottom: 12px;
+        }
+        .link-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .btn {
+            flex: 1;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            transition: opacity 0.2s;
+        }
+        .btn:hover {
+            opacity: 0.85;
+        }
+        .btn-amazon {
+            background-color: #ff9900;
+            color: #111;
+        }
+        .btn-flipkart {
+            background-color: #2874f0;
+            color: white;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #a0aec0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Smart Shopping Hub</h1>
+        <p>Best picks for Daily Needs, Women, Kids & Home Kitchen</p>
+    </div>
+
+    <div class="container">
+        
+        <!-- Daily Needs -->
+        <div class="section-title">🛒 Daily Needs & Essentials</div>
+        
+        <div class="card">
+            <h3>Daily Household Utility & Cleaning Items</h3>
+            <p>Best quality everyday essentials and cleaning tools.</p>
+            <div class="link-buttons">
+                <a href="YOUR_AMAZON_LINK_HERE" class="btn btn-amazon" target="_blank">Amazon Link</a>
+                <a href="YOUR_FLIPKART_LINK_HERE" class="btn btn-flipkart" target="_blank">Flipkart Link</a>
+            </div>
+        </div>
+
+        <!-- Women's Fashion & Beauty -->
+        <div class="section-title">👗 Women's Fashion & Beauty</div>
+        
+        <div class="card">
+            <h3>Ethnic Wear, Skincare & Accessories</h3>
+            <p>Ethnic wear, western wear, skincare essentials, handbags, accessories.</p>
+            <div class="link-buttons">
+                <a href="https://link.amazon/B0d553Vhn" class="btn btn-amazon" target="_blank">Amazon Link</a>
+                <a href="YOUR_FLIPKART_LINK_HERE" class="btn btn-flipkart" target="_blank">Flipkart Link</a>
+            </div>
+        </div>
+
+        <!-- Kids Section -->
+        <div class="section-title">🧸 Kids Section</div>
+        
+        <div class="card">
+            <h3>Toys, Baby Care & Kids Clothing</h3>
+            <p>Toys, baby care products, kids clothing, school/study essentials.</p>
+            <div class="link-buttons">
+                <a href="YOUR_AMAZON_LINK_HERE" class="btn btn-amazon" target="_blank">Amazon Link</a>
+                <a href="YOUR_FLIPKART_LINK_HERE" class="btn btn-flipkart" target="_blank">Flipkart Link</a>
+            </div>
+        </div>
+
+        <!-- Home & Kitchen -->
+        <div class="section-title">🍳 Home & Kitchen</div>
+        
+        <div class="card">
+            <h3>Smart Kitchen Gadgets & Organizers</h3>
+            <p>Smart kitchen gadgets, storage organizers, home decor, cleaning tools.</p>
+            <div class="link-buttons">
+                <a href="YOUR_AMAZON_LINK_HERE" class="btn btn-amazon" target="_blank">Amazon Link</a>
+                <a href="YOUR_FLIPKART_LINK_HERE" class="btn btn-flipkart" target="_blank">Flipkart Link</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 Smart Shopping Hub. All rights reserved.
+        </div>
+    </div>
+
+</body>
+</html>
